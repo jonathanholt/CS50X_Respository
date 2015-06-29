@@ -1,0 +1,21 @@
+0. Pneumonoultramicroscopicsilicovolcanoconiosis
+1. getrusage informs us of resource usage statistics.
+2. Rusage has 16 members.irre
+3. We use getrusage() to get the reference point immediately before and after the function call, it can filter out irrelevant resource
+usage because we pass by reference, which doesn't store a copy of what we referenced.
+4. In the main for loop first, each string is iterated through. First, we check and approve alphabetical and
+apostrophe characters and increment index.
+Words that are too long, or words that contain numeric characters are ignored.
+Next, if index is larger than one we have a suitable word. We call the dictionary.c function misspelled on the word.
+If the word is mispelled then we update all of the relevant information and continue checking the document.
+5. fgets() is a preferred operator for reading a textfile line-by-line, as fscanf() can ignore whitespaces and potentially
+throw an error.
+6. Since the dictionary and subsequently the word to be checked will remain constant after initialised,
+ check and load will not change size, unlike the other functions, therefore a const parameter is appropriate.
+7. I used a hash table data structure. a hash table is essentially a collection of nodes. Each of the 'bucket' nodes contains a 'bucket number' (hash value) and a pointer. It is through the pointer that the dictionary words are stored
+in the buckets, based on their hash value.
+8. Oops, I don't have a record of that information.
+9. Over the course of the week I spent some time experimenting with various hash functions and tinkering with the actual size of the hashtable.
+10. In all honesty it took virtually all week to get working code. (I struggled with this problem set more than others)
+As such I wasn't able to spend too much time experimenting with more hash functions and trying to optimise the size
+of my hash table for performance too much.

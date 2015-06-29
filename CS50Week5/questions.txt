@@ -1,0 +1,24 @@
+0.  GIF = 256. JPEG = 16,777,216. BMP = 256. PNG = 16,777,216 
+1.  GIF
+2.  Lossless and Lossy compression reduce an images filesize, the primary difference being that lossless compression allows the
+original image to be recreated with a high degree of accuracy. Conversely, lossy compression changes are not reversable. 
+3.  JPEG
+4.  When a file is deleted, the pointer to that file is deleted but the data is still recoverable. 
+5.  You can overwrite data using a program that replaces all data with 0 values.
+6. stdint is a header file that lets you utilise some defined variables representing different
+byte sizes. These variables all have a defined 'width'. e.g. 32-bit
+7. All of these variables represent different sizes, or widths. It is useful to use them when working
+with image files for example to search for patterns of bytes.
+8. BYTE = 1 byte, DWORD = 4 bytes, LONG = 4 bytes, WORD = 2 bytes
+9. BM
+10. bfSize is the size of the entire BMP file, while biSize is the size of the BITMAPINFOHEADER.
+11. If biHeight is negative, it means the image is a top-down DIB, meaning that is has been stored in memory starting from the bottom-left hand
+pixel.
+12. biBitCount 
+13. If there is no free space to write the file, or the user doesn't have the permission to write in the file.
+14. The third arguement of fread represents how many elements (specified in size) should be read. In whodunit.c we want to iterate over
+the image pixel-by-pixel, so 1 is appropriate.
+15. 3 bytes
+16. fseek allows you to change to a different position in the file.
+17. SEEK_CUR means you want to jump a certain amount of bytes form the current position.
+18. Milo Bananazip
